@@ -367,6 +367,8 @@ bool Station::loadFromFile(const std::string& filename, bool* isAuto, bool autom
 
                     auto discount = discountManager->getDiscountByName(discountName);
 
+                    if (!discount) discount = discountManager->getDiscountByName("Без скидки");
+
                     addTariff(std::make_unique<Tariff>(name, price, type, std::move(discount)));
                 } catch (...) {}
             } else if (section == "TICKETS" && tokens.size() >= 2) {
