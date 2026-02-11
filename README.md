@@ -15,3 +15,6 @@ cd VokzalProject
 mkdir build && cd build
 cmake ..
 make
+```
+## Полный отчёт по проекту
+[Проект "Панель управления вокзалом"](https://docs.google.com/document/d/1VYRZRI4cLrfY1NT6Gv1vZT0lcjUpCN-84yoP2AYFn34/edit?usp=sharing)
